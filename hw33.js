@@ -5,10 +5,9 @@ randomImageButton.innerHTML = "RANDOM IMAGE";
 randomImageButton.addEventListener("click", getImage);
 
 function getImage() {
-  var imagenes = document.querySelectorAll('img');
+  var imagesAll = document.querySelectorAll('img');
 
-  // Recorre la lista de elementos <img> y elimínalos
-  imagenes.forEach(function (img) {
+  imagesAll.forEach(function (img) {
     img.remove();
   });
   const random = Math.floor(Math.random() * 9 + 1);
